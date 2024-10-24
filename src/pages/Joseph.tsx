@@ -1,8 +1,10 @@
 import { BentoDemo } from "@/components/BentoGrid";
+import { IconCloudDemo } from "@/components/IconCloud";
+import TextRevealByWord from "@/components/magicui/text-reveal";
 import TypingAnimation from "@/components/magicui/typing-animation";
 import { MarqueeDemo } from "@/components/Marquee";
+import { OrbitingCirclesDemo } from "@/components/OrbitingCircles";
 import { RetroGridDemo } from "@/components/RetroGrid";
-import { TextRevealDemo } from "@/components/TextReveal";
 import { motion } from "framer-motion";
 
 const Joseph = () => {
@@ -16,12 +18,16 @@ const Joseph = () => {
     >
       <RetroGridDemo />
       <TypingAnimation
-        className="text-4xl font-bold text-black dark:text-white"
+        className="text-4xl font-bold text-black translate-y-20 dark:text-white"
         text="Welcome, I'm Joseph Alforque"
       />
-      <TextRevealDemo />
+      <TextRevealByWord text="Joseph Alforque will change the way you design." />
       <div className="mx-auto max-w-6xl my-10">
         <BentoDemo />
+      </div>
+      <div className="grid grid-cols-2 mx-auto max-w-7xl my-10">
+        <IconCloudDemo />
+        <OrbitingCirclesDemo />
       </div>
       <MarqueeDemo />
     </motion.div>

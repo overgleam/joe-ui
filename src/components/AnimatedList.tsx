@@ -13,33 +13,32 @@ interface Item {
 
 let notifications = [
   {
-    name: "Payment received",
-    description: "Magic UI",
-    time: "15m ago",
-
-    icon: "💸",
-    color: "#00C9A7",
-  },
-  {
-    name: "User signed up",
-    description: "Magic UI",
-    time: "10m ago",
+    name: "Joseph Alforque",
+    description: "Profile Updated",
+    time: "Just now",
     icon: "👤",
-    color: "#FFB800",
+    color: "#4A90E2",
   },
   {
-    name: "New message",
-    description: "Magic UI",
+    name: "Joseph Alforque",
+    description: "New Achievement Unlocked",
     time: "5m ago",
-    icon: "💬",
-    color: "#FF3D71",
+    icon: "🏆",
+    color: "#FFD700",
   },
   {
-    name: "New event",
-    description: "Magic UI",
-    time: "2m ago",
-    icon: "🗞️",
-    color: "#1E86FF",
+    name: "Joseph Alforque",
+    description: "Sent you a message",
+    time: "10m ago",
+    icon: "💌",
+    color: "#FF69B4",
+  },
+  {
+    name: "Joseph Alforque",
+    description: "Joined a new project",
+    time: "15m ago",
+    icon: "🚀",
+    color: "#32CD32",
   },
 ];
 
