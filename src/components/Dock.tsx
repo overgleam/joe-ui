@@ -21,9 +21,9 @@ export function DockDemo() {
   return (
     <div className="fixed top-0 w-full z-50">
       <TooltipProvider>
-        <Dock magnification={100} direction="middle">
+        <Dock className="px-5 gap-5" magnification={100} direction="middle">
           {DATA.navbar.map((item) => (
-            <DockIcon className="mx-2" key={item.label}>
+            <DockIcon key={item.label}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
@@ -42,7 +42,7 @@ export function DockDemo() {
           ))}
           <Separator orientation="vertical" className="h-full" />
           {DATA.secondary.map((item) => (
-            <DockIcon className="mx-2" key={item.label}>
+            <DockIcon key={item.label}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link

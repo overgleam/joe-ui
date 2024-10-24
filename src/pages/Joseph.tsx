@@ -1,3 +1,4 @@
+import { MarqueeDemo } from "@/components/Marquee";
 import { RetroGridDemo } from "@/components/RetroGrid";
 import { motion } from "framer-motion";
 
@@ -10,6 +11,7 @@ const Joseph = () => {
       transition={{ duration: 0.8 }}
     >
       <RetroGridDemo />
+      <MarqueeDemo />
     </motion.div>
   );
 };
