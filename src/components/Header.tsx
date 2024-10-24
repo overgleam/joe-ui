@@ -1,30 +1,9 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { DockDemo } from "./Dock";
 
-const Header: React.FC = () => {
-  const activeClassName = "text-blue-500";
-
+const Header = () => {
   return (
-    <header className="bg-gray-800 p-4">
-      <nav className="container mx-auto flex space-x-4">
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) =>
-            isActive ? activeClassName : "text-white"
-          }
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? activeClassName : "text-white"
-          }
-        >
-          About
-        </NavLink>
-      </nav>
+    <header className="fixed top-0 w-full z-50 p-4 bg-transparent">
+      <DockDemo />
     </header>
   );
 };

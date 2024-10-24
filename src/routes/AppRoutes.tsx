@@ -1,15 +1,19 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "@/pages/Home";
-import About from "@/pages/About";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Joseph from "@/pages/Joseph";
+import Alforque from "@/pages/Alforque";
 import Layout from "@/components/Layout";
+import NotFound from "@/pages/NotFound";
 
 const AppRoutes = () => {
+  const location = useLocation();
+
   return (
-    <Routes>
+    <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route index element={<Joseph />} />
+        <Route path="alforque" element={<Alforque />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
