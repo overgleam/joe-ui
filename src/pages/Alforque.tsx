@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
 import { MeteorDemo } from "@/components/Meteor";
-
+import { HeroVideoDialogDemo } from "@/components/HeroDialog";
+import BlurFade from "@/components/magicui/blur-fade";
+import * as variants from "@/constants/framer-variants";
 const Alforque = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -50 }}
-      transition={{ duration: 0.8 }}
-    >
-      <MeteorDemo />
-    </motion.div>
+    <>
+      <BlurFade variant={variants.fadeSlideUp} delay={0.25} inView>
+        <MeteorDemo />
+      </BlurFade>
+
+      <HeroVideoDialogDemo />
+    </>
   );
 };
 

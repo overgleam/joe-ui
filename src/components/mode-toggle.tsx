@@ -14,7 +14,7 @@ export function ModeToggle() {
     <Button
       variant="outline"
       size="icon"
-      className="rounded-3xl"
+      className="rounded-3xl bg-transparent"
       onClick={toggleTheme}
       aria-label="Toggle theme"
     >

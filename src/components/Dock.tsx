@@ -19,7 +19,7 @@ const DATA = {
 
 export function DockDemo() {
   return (
-    <div className="fixed top-0 w-full z-50">
+    <>
       <TooltipProvider>
         <Dock className="px-5 gap-5" magnification={100} direction="middle">
           {DATA.navbar.map((item) => (
@@ -65,6 +65,6 @@ export function DockDemo() {
           </DockIcon>
         </Dock>
       </TooltipProvider>
-    </div>
+    </>
   );
 }

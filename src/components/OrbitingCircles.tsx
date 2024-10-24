@@ -2,7 +2,7 @@ import OrbitingCircles from "@/components/magicui/orbiting-circles";
 
 export function OrbitingCirclesDemo() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex flex-grow max-md:h-[500px] w-full flex-col items-center justify-center overflow-hidden">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
         Joseph Alforque
       </span>
